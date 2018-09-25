@@ -14,7 +14,7 @@ module.exports = {
 		}
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.js$/,
 				loader: 'babel-loader',
@@ -27,7 +27,7 @@ module.exports = {
 					loader: 'vue-loader',
 				}
 			}
-	
+
 		]
 	},
 	plugins: [
