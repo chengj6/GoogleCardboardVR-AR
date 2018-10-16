@@ -17,8 +17,8 @@ webpack
 
 Use the following commands to stop and start MongoDB:
 ```
-sudo service mongod start
-sudo service mongod stop
+sudo service mongodb start
+sudo service mongodb stop
 ```
 
 To run the code:
