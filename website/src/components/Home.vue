@@ -38,7 +38,7 @@
       </a-entity>
 
       <!-- Camera + cursor. -->
-      <a-entity camera look-controls>
+      <a-entity camera look-controls wasd-controls>
         <a-cursor id="cursor"
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
           animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
@@ -46,6 +46,8 @@
           event-set__2="_event: mouseleave; color: black"
           fuse="true"
           raycaster="objects: .link"></a-cursor>
+				<a-entity geometry="primitive: plane; height: 0.2; width: 0.2" position="0 0 -1"
+          material="color: gray; opacity: 0.5"></a-entity>
       </a-entity>
 	</a-scene>
 </template>
